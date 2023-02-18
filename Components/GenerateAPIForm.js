@@ -45,7 +45,7 @@ function GenerateAPIForm() {
     setShowForm(false);
     setShowLoading(true);
     const res = await fetch(
-      "https://beanstalkapi.senor-duckyduck.repl.co/generate_api",
+      "https://cors-anywhere.herokuapp.com/https://beanstalkapi.senor-duckyduck.repl.co/generate_api",
       {
         method: "POST",
         mode: "cors",
