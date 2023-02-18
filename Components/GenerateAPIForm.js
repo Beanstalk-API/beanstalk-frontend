@@ -48,9 +48,9 @@ function GenerateAPIForm() {
       "https://cors-anywhere.herokuapp.com/https://beanstalkapi.senor-duckyduck.repl.co/generate_api",
       {
         method: "POST",
-        mode: "cors",
         headers: {
           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin": "*",
         },
         body: JSON.stringify(formData),
       }
