@@ -21,7 +21,7 @@ export default function Home() {
       <Container className="p-0 m-0" fluid>
         <CustomNav />
       </Container>
-      <Container>
+      <Container fluid>
         <Hero />
       </Container>
     </>

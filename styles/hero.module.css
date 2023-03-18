@@ -15,3 +15,38 @@
   font-size: 32px;
   font-family: "Inconsolata-Regular";
 }
+
+.greenBackground {
+  background-color: #47c98d;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.getStartedButton {
+  background-color: #fff;
+  font-family: "Inconsolata-Regular";
+  border: 2px solid #33c481;
+  border-radius: 25px;
+  padding: 5px 10px;
+  color: #000;
+  font-size: 24px;
+}
+
+.getStartedButton:hover {
+  background-color: #33c481;
+  font-family: "Inconsolata-Regular";
+  border: none;
+  border-radius: 25px;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.greenUnderline {
+  text-decoration: underline;
+  text-decoration-color: #33c481;
+}
+
+.heroIllustration {
+  height: 500px;
+  width: 700px;
+}
