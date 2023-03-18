@@ -1,0 +1,17 @@
+.heroContainer {
+  margin-top: 150px;
+}
+
+.title {
+  font-family: "Poppins-Bold";
+  font-size: 52px;
+}
+
+.heroGreenBack {
+  color: #000;
+}
+
+.subtext {
+  font-size: 32px;
+  font-family: "Inconsolata-Regular";
+}

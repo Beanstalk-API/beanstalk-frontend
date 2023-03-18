@@ -44,17 +44,13 @@ function GenerateAPIForm() {
     e.preventDefault();
     setShowForm(false);
     setShowLoading(true);
-    const res = await fetch(
-      "https://beanstalkapi.senor-duckyduck.repl.co/generate_api",
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
-        },
-        body: JSON.stringify(formData),
-      }
-    );
+    const res = await fetch("http://127.0.0.1:8000/generate_api", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
 
     const data = await res.json();
     setCode(data);

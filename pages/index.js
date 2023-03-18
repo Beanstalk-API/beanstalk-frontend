@@ -3,6 +3,11 @@ import styles from "@/styles/Home.module.css";
 
 // components
 import GenerateAPIForm from "@/Components/GenerateAPIForm";
+import CustomNav from "@/Components/CustomNav/CustomNav";
+import Hero from "@/Components/Hero/Hero";
+
+// react-bootstrap
+import { Container } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -13,7 +18,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <GenerateAPIForm />
+      <Container className="p-0 m-0" fluid>
+        <CustomNav />
+      </Container>
+      <Container>
+        <Hero />
+      </Container>
     </>
   );
 }
