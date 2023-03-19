@@ -8,6 +8,8 @@ import Hero from "@/Components/Hero/Hero";
 
 // react-bootstrap
 import { Container } from "react-bootstrap";
+import Contact from "@/Components/contact/contact";
+import Features from "@/Components/features/features";
 
 export default function Home() {
   return (
@@ -23,6 +25,12 @@ export default function Home() {
       </Container>
       <Container fluid>
         <Hero />
+      </Container>
+      <Container fluid>
+        <Features />
+      </Container>
+      <Container fluid>
+        <Contact />
       </Container>
     </>
   );

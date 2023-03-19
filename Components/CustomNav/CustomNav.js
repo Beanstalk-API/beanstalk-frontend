@@ -39,6 +39,9 @@ function CustomNav() {
             <a className={`${style.navLink}`} href="#features">
               Features
             </a>
+            <a className={`${style.navLink}`} href="#contact">
+              Contact
+            </a>
           </Stack>
           {/* Get started/Dropdown */}
           {/* Get started */}
