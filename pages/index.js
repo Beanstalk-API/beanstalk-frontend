@@ -10,7 +10,7 @@ import Hero from "@/Components/Hero/Hero";
 import { Container } from "react-bootstrap";
 import Contact from "@/Components/contact/contact";
 import Features from "@/Components/features/features";
-
+import Frameworks from "@/Components/Frameworks/Frameworks";
 export default function Home() {
   return (
     <>
@@ -30,7 +30,7 @@ export default function Home() {
         <Features />
       </Container>
       <Container fluid>
-        <Contact />
+        <Frameworks />
       </Container>
     </>
   );

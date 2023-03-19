@@ -1,37 +1,51 @@
 .featuresContainer {
-    padding: 80px 0;
-    background-color: #fff;
-  }
-  
-  .title {
-    margin-bottom: 64px;
-    font-size: 48px;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .feature {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 64px;
-  }
-  
-  .featureIcon {
-    height: 64px;
-    width: 64px;
-    margin-bottom: 32px;
-  }
-  
-  .featureTitle {
-    margin-bottom: 16px;
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-  }
-  
-  .featureDescription {
-    font-size: 18px;
-    color: #666;
-  }
+  padding: 80px 0;
+  background-color: #fff;
+}
+
+.title {
+  margin-bottom: 64px;
+  font-size: 48px;
+  font-weight: 600;
+  color: #333;
+  text-decoration: underline;
+  text-decoration-color: #33c481;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.featureIcon {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 32px;
+}
+
+.featureTitle {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-family: "Poppins-Bold";
+  background-color: #47c98d;
+  padding: 5px 10px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.featureDescription {
+  font-size: 24px;
+  font-family: "Inconsolata-Regular";
+  color: #666;
+  text-align: left;
+  max-width: 600px;
+}
+
+.generateIllustration {
+  height: 400px;
+  width: 400px;
+}
