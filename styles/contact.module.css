@@ -1,0 +1,29 @@
+.contactContainer {
+    background-color: #f5f5f5;
+    padding: 80px 0;
+  }
+  
+  .title {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .contactDetails {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .contactLink {
+    margin-left: 20px;
+    color: #33c481;
+    text-decoration: none;
+  }
+  
+  .contactLink:hover {
+    text-decoration: underline;
+  }
