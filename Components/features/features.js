@@ -5,7 +5,7 @@ import { FaShieldAlt, FaLaptopCode, FaMobileAlt } from "react-icons/fa";
 
 function Features() {
   return (
-    <Container className={` ${style.featuresContainer}`} fluid>
+    <Container id="features" className={` ${style.featuresContainer}`} fluid>
       <Row>
         {/* Features list */}
         <Col className="d-flex justify-content-center align-items-center">

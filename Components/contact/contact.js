@@ -5,7 +5,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 function Contact() {
   return (
-    <Container className={` ${style.contactContainer}`} fluid>
+    <Container id="contact" className={` ${style.contactContainer}`} fluid>
       <Row>
         {/* Contact details */}
         <Col className="d-flex justify-content-center align-items-center">
