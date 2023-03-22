@@ -8,9 +8,9 @@ import Hero from "@/Components/Hero/Hero";
 
 // react-bootstrap
 import { Container } from "react-bootstrap";
-import Contact from "@/Components/contact/contact";
 import Features from "@/Components/features/features";
 import Frameworks from "@/Components/Frameworks/Frameworks";
+import Footer from "@/Components/footer/footer";
 export default function Home() {
   return (
     <>
@@ -31,6 +31,9 @@ export default function Home() {
       </Container>
       <Container fluid>
         <Frameworks />
+      </Container>
+      <Container className="m-0 p-0" fluid>
+        <Footer />
       </Container>
     </>
   );
