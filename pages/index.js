@@ -32,10 +32,9 @@ export default function Home() {
       <Container fluid>
         <Frameworks />
       </Container>
-      <Container fluid>
+      <Container className="m-0 p-0" fluid>
         <Footer />
       </Container>
-      
     </>
   );
 }
