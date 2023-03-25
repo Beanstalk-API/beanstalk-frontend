@@ -1,53 +1,136 @@
 .form_container {
-    font-family: "Poppins-Bold";
-    color: #ffffff;
-    text-align: center;
-    margin-top: 15%;
+  font-family: "Poppins-Bold";
+  color: #000;
+  text-align: center;
+  margin-top: 25px;
+  width: 500px;
+  background-color: rgba(51, 196, 129, 0.1);
+  border-radius: 25px;
+  padding: 5px;
 }
 
 .input_container {
-    margin-top: 15px;
+  margin-top: 15px;
+}
+
+.inputContainer {
+  background-color: #fff;
+  min-width: 250px;
+  min-height: 50px;
+  border-radius: 10px;
+  border: solid rgba(0, 0, 0, 0.1);
 }
 
 .form_input {
-    border-radius: 25px;
-    border: 2px solid #33C481;
-    background-color: #ffffff;
-    color: #000000;
-    padding: 5px 10px;
-    outline: none;
+  border-radius: 25px;
+  border: 2px solid #33c481;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 5px 10px;
+  outline: none;
 }
 
 .container {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-}
-
-.logo {
-    width: 320px;
+  color: #000;
+  text-align: center;
 }
 
 .loading_indicator {
-    margin-top: 25%;
+  margin-top: 25%;
 }
 
 .submit_button {
-    margin-top: 15px;
-    padding: 5px 10px;
-    background-color: #33C481;
-    color: #ffffff;
-    border-radius: 25px;
-    width: 141px;
+  margin-top: 15px;
+  padding: 5px 10px;
+  background-color: #33c481;
+  color: #ffffff;
+  border-radius: 25px;
+  width: 141px;
 }
 
 .editor_container {
-    margin-top: 5%;
-    color: #000000;
-    border: 2px solid #33C481;
-    border-radius: 25px;
-    background-color: #F7F7F7;
-    padding: 10px;
-    text-align: left;
-    font-family: "Inconsolata-Regular";
+  margin-top: 5%;
+  color: #000000;
+  border: 2px solid #33c481;
+  border-radius: 25px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  text-align: left;
+  font-family: "Inconsolata-Regular";
+}
+
+.illustrationContainer {
+  height: 100vh;
+  background-color: rgba(51, 196, 129, 0.1);
+  border-radius: 10px;
+}
+
+.illustration {
+  width: 300px;
+  height: 300px;
+}
+
+.backArrow {
+  height: 24px;
+  width: 24px;
+  color: #33c481;
+}
+
+.backText {
+  font-family: "Inconsolata-Regular";
+  font-size: 18px;
+  color: #000;
+}
+
+.backText:hover {
+  font-family: "Inconsolata-Regular";
+  font-size: 18px;
+  color: #000;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.formTitle {
+  font-family: "Poppins-Bold";
+}
+
+.formSubtitle {
+  font-family: "Inconsolata-Regular";
+  max-width: 600px;
+  font-size: 18px;
+}
+
+.divider {
+  height: 55px;
+  border-right: solid rgba(0, 0, 0, 0.1) 2px;
+}
+
+.formInput {
+  outline: none;
+  border: none;
+  font-family: "Inconsolata-Regular";
+}
+
+.formLabel {
+  font-family: "Poppins-Bold";
+}
+
+.submitButton {
+  width: 150px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #33c481;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.submitButton:hover {
+  width: 170px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }

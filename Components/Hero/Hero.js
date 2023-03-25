@@ -11,6 +11,7 @@ import HeroIllustration from "@/Assets/Images/hero-illustration.png";
 
 // next
 import Image from "next/image";
+import Link from "next/link";
 
 function Hero() {
   return (
@@ -49,7 +50,11 @@ function Hero() {
                 </span>
               </div>
               <div className="mt-2">
-                <button className={style.getStartedButton}>Get Started</button>
+                <Link className={style.link} href="/dashboard">
+                  <button className={style.getStartedButton}>
+                    Get Started
+                  </button>
+                </Link>
               </div>
             </Container>
           </Col>

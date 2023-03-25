@@ -16,6 +16,10 @@
   font-family: "Inconsolata-Regular";
 }
 
+.link {
+  text-decoration: none;
+}
+
 .greenBackground {
   background-color: #47c98d;
   padding: 5px 10px;

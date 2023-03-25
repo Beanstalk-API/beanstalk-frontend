@@ -1,4 +1,7 @@
+// next
 import Head from "next/head";
+
+// stylesheet
 import styles from "@/styles/Home.module.css";
 
 // components

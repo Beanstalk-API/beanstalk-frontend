@@ -1,6 +1,9 @@
 // stylesheet
 import style from "@/styles/navbar.module.css";
 
+// next
+import Link from "next/link";
+
 // react-bootstrap
 import { Navbar, Container, Stack } from "react-bootstrap";
 
@@ -45,9 +48,11 @@ function CustomNav() {
           </Stack>
           {/* Get started/Dropdown */}
           {/* Get started */}
-          <button className={`${style.getStartedButton} d-none d-lg-block`}>
-            Get Started
-          </button>
+          <Link className={style.link} href="/dashboard">
+            <button className={`${style.getStartedButton} d-none d-lg-block`}>
+              Get Started
+            </button>
+          </Link>
 
           {/* Hamburger button */}
           <div
@@ -75,9 +80,11 @@ function CustomNav() {
               <a className={`${style.navLink}`} href="#features">
                 Features
               </a>
-              <button className={`${style.getStartedButton}`}>
-                Get Started
-              </button>
+              <Link href="/dashboard">
+                <button className={`${style.getStartedButton}`}>
+                  Get Started
+                </button>
+              </Link>
             </Stack>
           </Container>
         </>
