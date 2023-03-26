@@ -11,6 +11,7 @@ import Stack from "react-bootstrap/Stack";
 import Image from "next/image";
 import Link from "next/link";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 //react
 import { useState, useEffect } from "react";
@@ -22,7 +23,7 @@ import { RevolvingDot } from "react-loader-spinner";
 import formIllustration from "@/Assets/Images/form-illustration.png";
 
 // react codeblock
-import { CodeBlock, dracula } from "react-code-blocks";
+import { CodeBlock, CopyBlock, dracula } from "react-code-blocks";
 
 // monaco editor
 import Editor from "@monaco-editor/react";
@@ -33,8 +34,20 @@ import { MdDriveFileRenameOutline } from "react-icons/md";
 import { BsCodeSquare } from "react-icons/bs";
 import { CgToolbox } from "react-icons/cg";
 import { TbDatabase } from "react-icons/tb";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdHome } from "react-icons/io";
+import { MdContentCopy } from "react-icons/md";
+import { FaHistory } from "react-icons/fa";
+import { BsPlusSquareFill } from "react-icons/bs";
+import { CgProfile } from "react-icons/cg";
+import { GoGear } from "react-icons/go";
+
+// react pro sidebar
+import { Sidebar, Menu, MenuItem, useProSidebar } from "react-pro-sidebar";
 
 function GenerateAPIForm() {
+  const { collapseSidebar } = useProSidebar();
+  const router = useRouter();
   const [showForm, setShowForm] = useState(true);
   const [loading, setShowLoading] = useState(false);
   const [code, setCode] = useState({
@@ -303,13 +316,118 @@ function GenerateAPIForm() {
           <>
             {loading != true ? (
               <>
-                <Editor
-                  height="90vh"
-                  defaultLanguage={code.language}
-                  defaultValue={`${code.code.slice(1, -1)}`}
-                  theme="vs-dark"
-                  onChange={handleEditorChange}
-                />
+                <Container className="d-flex m-0 p-0" fluid>
+                  {/* sidebar */}
+                  <Sidebar style={{ height: "100vh" }} backgroundColor="#fff">
+                    <Menu
+                      menuItemStyles={{
+                        button: ({ level, active, disabled }) => {
+                          return {
+                            "&:hover": {
+                              backgroundColor: "#fff",
+                            },
+                          };
+                        },
+                      }}
+                    >
+                      <MenuItem
+                        icon={<GiHamburgerMenu className={style.sidebarIcon} />}
+                        className={style.sidebarBrand}
+                        onClick={() => collapseSidebar()}
+                      >
+                        <p className={`mb-0 ${style.sidebarTitle}`}>
+                          <span className={style.greenHighlight}>B</span>
+                          eanstalk
+                        </p>
+                      </MenuItem>
+                      <MenuItem
+                        className="mt-4"
+                        onClick={() => setShowForm(true)}
+                        icon={
+                          <BsPlusSquareFill className={style.sidebarIcon} />
+                        }
+                      >
+                        <button className={` ${style.newAPIButton}`}>
+                          New API
+                        </button>
+                      </MenuItem>
+                      <MenuItem
+                        className="mt-4"
+                        onClick={() => router.push("/")}
+                        icon={<IoMdHome className={style.sidebarIcon} />}
+                      >
+                        <p className={`mb-0 ${style.sidebarItem}`}>
+                          <span className={style.greenHighlight}>H</span>
+                          ome
+                        </p>
+                      </MenuItem>
+                      <MenuItem
+                        icon={
+                          <FaHistory
+                            style={{ height: "18px", widht: "18px" }}
+                            className={style.sidebarIcon}
+                          />
+                        }
+                      >
+                        <p className={`mb-0 ${style.sidebarItem}`}>
+                          <span className={style.greenHighlight}>H</span>
+                          istory
+                        </p>
+                      </MenuItem>
+                      <MenuItem
+                        icon={<CgProfile className={style.sidebarIcon} />}
+                      >
+                        <p className={`mb-0 ${style.sidebarItem}`}>
+                          <span className={style.greenHighlight}>P</span>
+                          rofile
+                        </p>
+                      </MenuItem>
+                      <MenuItem icon={<GoGear className={style.sidebarIcon} />}>
+                        <p className={`mb-0 ${style.sidebarItem}`}>
+                          <span className={style.greenHighlight}>S</span>
+                          ettings
+                        </p>
+                      </MenuItem>
+                    </Menu>
+                  </Sidebar>
+                  <Container className="" fluid>
+                    {/* Editor */}
+                    <Container
+                      className="d-flex justify-content-start align-items-center p-3 "
+                      fluid
+                    >
+                      <h1 className={style.dashTitle}>Endpoint Code</h1>
+
+                      <button
+                        onClick={() => {
+                          navigator.clipboard.writeText(code.code);
+                        }}
+                        className={style.copyButton}
+                      >
+                        <Stack
+                          direction="horizontal"
+                          className="justify-content-center align-items-center"
+                          gap={2}
+                        >
+                          <MdContentCopy />
+                          <p className="mb-0">Copy</p>
+                        </Stack>
+                      </button>
+                    </Container>
+                    <Container className="d-flex justify-content-center" fluid>
+                      <div className={style.editorContainer}>
+                        <Editor
+                          height="70vh"
+                          width="900px"
+                          defaultLanguage={code.language}
+                          defaultValue={`${code.code.slice(0, -1)}`}
+                          theme="vs-dark"
+                          onChange={handleEditorChange}
+                        />
+                      </div>
+                    </Container>
+                  </Container>
+                </Container>
               </>
             ) : (
               <></>

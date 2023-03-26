@@ -9,7 +9,7 @@ import { Container } from "react-bootstrap";
 function Dashboard() {
   return (
     <>
-      <Container fluid>
+      <Container className="" fluid>
         <GenerateAPIForm />
       </Container>
     </>

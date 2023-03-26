@@ -134,3 +134,85 @@
   width: 170px;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
+
+.sidebarTitle {
+  background-color: #fff;
+  color: #000;
+  font-family: "Poppins-Bold";
+  border-radius: 10px;
+}
+
+.sidebarItem {
+  padding: 5px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Poppins-Bold";
+  border-radius: 10px;
+}
+
+.sidebarBrand {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+  padding-left: 5px;
+}
+
+.sidebarItem:hover {
+  padding: 5px;
+  background-color: rgba(51, 196, 129, 0.1);
+  color: #000;
+  font-family: "Poppins-Bold";
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.sidebarIcon {
+  color: #33c481;
+  height: 24px;
+  width: 24px;
+}
+.greenHighlight {
+  color: #33c481;
+}
+
+.newAPIButton {
+  background-color: #33c481;
+  border: none;
+  width: 141px;
+  padding: 5px 10px;
+  color: #fff;
+  font-family: "Poppins-Bold";
+  border-radius: 5px;
+}
+
+.newAPIButton:hover {
+  background-color: #5bcf9a;
+}
+
+.copyButton {
+  background-color: #33c481;
+  border: none;
+  width: 111px;
+  padding: 5px 10px;
+  color: #fff;
+  margin-left: auto;
+  font-family: "Poppins-Bold";
+  border-radius: 5px;
+}
+
+.copyButton:hover {
+  background-color: #5bcf9a;
+  box-shadow: 0 5px 15px #5bcf9a;
+}
+
+.dashTitle {
+  padding: 5px 10px;
+  background-color: rgba(51, 196, 129, 0.1);
+  color: #000;
+  border-radius: 10px;
+  font-family: "Inconsolata-Regular";
+}
+
+.editorContainer {
+  border: solid 2px #33c481;
+  overflow: hidden;
+  border-radius: 25px;
+}
