@@ -46,6 +46,9 @@ function CustomNav() {
               Contact
             </a>
           </Stack>
+          <Link className={style.link} href='/login'> <button className={`${style.getStartedButton} d-none d-lg-block`} >
+            Login/Signup
+          </button></Link>
           {/* Get started/Dropdown */}
           {/* Get started */}
           <Link className={style.link} href="/dashboard">
